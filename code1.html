@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        html {
+            display: inline-block;
+        }
+
+        .clearfix::after {
+            content: " ";
+            display: table;
+            clear: both;
+
+        }
+        .container{
+            display: flex;
+        }
+
+        /* ----------------------------------- */
+        /* -----------vùng trái--------------- */
+        .bg1 {
+            float: left;
+            background-color: rgb(255, 157, 157);
+            width: 55%;
+            text-align: center;
+
+        }
+
+        #text1 {
+            color: white;
+            font-size: 20px;
+            font-weight: 700px;
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            width: 45%;
+            margin-left: 30%;
+        }
+
+        #logo {
+            float: left;
+            margin: 20px 20px;
+        }
+
+        #banner {
+            width: 80%;
+
+        }
+
+        /* ----------------------------------- */
+        /* -----------vùng trái--------------- */
+        .bg2 {
+            float: right;
+            width: 45%;
+            background-color: rgb(244, 239, 243);
+        }
+
+        .hed1 {
+            padding-top: 50px;
+            padding-left: 50px;
+
+        }
+
+        input {
+            width: 80%;
+            height: 60px;
+            border-radius: 20px;
+            padding-left: 10px;
+
+        }
+
+        form {
+            padding-left: 50px;
+
+        }
+
+        label {
+            margin-top: 50px;
+
+            font-size: 30px;
+        }
+
+        input{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        button {
+            text-decoration: none;
+            color: white;
+            background-color: rgb(255, 157, 157);
+            width: 80%;
+            height: 60px;
+            font-size: 20px;
+            font-weight: 700;
+            border-radius: 20px;
+            margin: 100px 50px;
+            border: none;
+        }
+
+        #p1 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        #a1 {
+            padding-bottom: 100px;
+        }
+
+        .social {
+            display: flex;
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-bottom: 50px;
+        }
+
+        .google {
+            padding-left: 5px;
+            width: 25%;
+            background-color: rgb(246, 249, 251);
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+
+        .facebook {
+            
+            margin-left: 20px;
+            padding-left: 5px;
+            width: 25%;
+            background-color: rgb(30, 6, 244);
+            border: 1px solid black;
+            border-radius: 20px;
+            
+        }
+        #sgfb{
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+            font-weight: 700;
+            padding: 10px 10px 10px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <div class="bg1">
+        <div>
+            <!-- logo -->
+            <img id="logo" src="images/logo.svg" alt="logo">
+
+        </div>
+        <div class="clearfix"></div>
+        <div>
+            <img id="banner" src="images/illustration.svg" alt="banner">
+        </div>
+        <div id="text1">
+            <!-- text -->
+            <p>Start for free & get attractiv offers today</p>
+        </div>
+
+    </div>
+    <div class="bg2">
+        <div class="hed1">
+            <h2 id="h21">Get Started</h2>
+            <p id="p1">Alredy Heve An Acount</p>
+            <a id="a1" href="#">Sign In</a>
+        </div>
+        <div class="social">
+            <div class="google">
+                <img src="images/icons8-google.svg" alt="">
+                <a id="sggg" href="#">Sign In</a>
+            </div>
+            <div class="facebook">
+                <img src="images/icons8-facebook.svg" alt="">
+                <a id="sgfb" href="#">Sign In</a>
+            </div>
+
+        </div>
+        <div>
+            <form>
+                <label for="">User Name</label><br>
+                <input type="text" value="James Bond"><br>
+                <label for="">Email</label><br>
+                <input type="email" value="Bond@gmail.com"><br>
+                <label for="">Password</label><br>
+                <input type="password" placeholder="Password Here"><br>
+            </form>
+            <button type="submit" id="submit">Submit</button>
+        </div>
+
+    </div>
+</div>
+</body>
+
+</html>
